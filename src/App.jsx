@@ -147,12 +147,7 @@ function App() {
             <img src={questions[currentQuestion].image}></img>
           ) : null}
           {questions[currentQuestion].video ? (
-            <video
-              src={questions[currentQuestion].video}
-              style={{ maxHeight: "50vh" }}
-              autoPlay
-              loop
-            ></video>
+            <video src={questions[currentQuestion].video} autoPlay loop></video>
           ) : null}
           <h2>{questions[currentQuestion].question}</h2>
           <div className="buttonWrap">
